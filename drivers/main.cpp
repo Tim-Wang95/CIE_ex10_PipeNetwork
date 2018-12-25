@@ -5,7 +5,7 @@ int main() {
 	std::string filename = "C:/Users/tan84/Desktop/input.txt";
 	cie::pipenetwork::PipeNetwork p(filename);
 
-	p.print();
+	//p.print();
 
 	std::vector<double> q = p.computeFluxes();
 
