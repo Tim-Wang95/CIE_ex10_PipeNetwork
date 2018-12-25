@@ -65,6 +65,7 @@ namespace cie {
 			return q;
 		}
 
+		/*
 		void PipeNetwork::print() {
 			for (int i = 0; i < 8; i++) {
 				for (int j = 0; j < 8; j++) {
@@ -72,10 +73,10 @@ namespace cie {
 				}
 				std::cout << std::endl;
 			}
-			std::cout << tube_[2]->permeability();
+			//std::cout << tube_[0]->permeability();
 			std::cout << std::endl;
 			std::cout << std::endl;
 		}
-
+		*/
 	}
 }
