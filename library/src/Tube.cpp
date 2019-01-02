@@ -13,7 +13,7 @@ namespace cie {
 		}
 
 		double Tube::permeability() const {
-			return 3.14*9.81*std::pow(d, 4) / (128*std::pow(10,5)*length());
+			return 3.14159265358979323846*9.81*std::pow(d, 4) / (128*this->length())*std::pow(10,6);
 		}
 
 		const Node* Tube::node1() const { return n1; }
