@@ -59,7 +59,7 @@ namespace cie {
 			std::vector<double> h = linalg::solve(*B, Q);
 			std::vector<double> q(numOfTubes);
 			for (int i = 0; i < numOfTubes; i++) {
-				q[i] = tube_[i]->permeability()*(h[tube_[i]->node1()->id()] - h[tube_[i]->node2()->id()]);
+				q[i] = -tube_[i]->permeability()*(h[tube_[i]->node1()->id()] - h[tube_[i]->node2()->id()]);
 			}
 
 			return q;
