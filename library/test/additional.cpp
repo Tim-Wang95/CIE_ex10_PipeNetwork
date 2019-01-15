@@ -36,7 +36,6 @@ namespace cie {
 			CHECK(tube.permeability() == Approx(permeability).epsilon(tolerance));
 		}
 
-
 	}
 }
 
