@@ -61,6 +61,13 @@ namespace cie {
 			for (int i = 0; i < numOfTubes; i++) {
 				q[i] = -tube_[i]->permeability()*(h[tube_[i]->node1()->id()] - h[tube_[i]->node2()->id()]);
 			}
+			
+			// output the results
+			/*for (int i = 0; i < q.size(); i++) {
+				std::cout << i + 1 << ".  " << q[i] << " " << std::endl;
+			}
+			std::cout << std::endl;
+			std::cout << std::endl;*/
 
 			return q;
 		}
