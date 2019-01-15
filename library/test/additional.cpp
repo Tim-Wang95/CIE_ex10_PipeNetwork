@@ -31,9 +31,9 @@ namespace cie {
 
 			double pi = 3.14159265358979323846;
 
-			double B = pi * 9.81 * std::pow(0.3, 4) / (128 * 1e-6 * 5);
+			double permeability = pi * 9.81 * std::pow(0.3, 4) / (128 * 1e-6 * 5);
 
-			CHECK(tube.permeability() == Approx(B).epsilon(tolerance));
+			CHECK(tube.permeability() == Approx(permeability).epsilon(tolerance));
 		}
 
 
