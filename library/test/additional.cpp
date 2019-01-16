@@ -40,11 +40,10 @@ namespace cie {
 
 			std::vector<double> fluxes = network.computeFluxes();
 
-			
 			double tolerance = 1e-10;
 
 			CHECK(fluxes[0] + fluxes[2] == Approx(50).epsilon(tolerance));
-			CHECK(-fluxes[0] + fluxes[1] + fluxes[4] + fluxes[5] == Approx(50).epsilon(tolerance));
+			CHECK(-fluxes[0] + fluxes[1] - fluxes[4] + fluxes[5] == Approx(50).epsilon(tolerance));
 			CHECK(fluxes[8] - fluxes[7] == Approx(50).epsilon(tolerance));
 			CHECK(fluxes[5] + fluxes[6] + fluxes[10] == Approx(150).epsilon(tolerance));
 		}
